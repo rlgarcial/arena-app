@@ -53,7 +53,7 @@ function buildTableBody(tableBodyID, tableData) {
  * @param {string} idPrefix
  * @param {object} actions
  */
-function injectTableactions(table, idPrefix, actions) {
+function injectTableActions(table, idPrefix, actions) {
     let bodyTable = $(table);
     bodyTable.html("");
     let actionButtons = [
