@@ -7,9 +7,8 @@
  */
 function buildTableHead(tableHeadID, tableData) {
     let tableHead = $(tableHeadID);
-    let headers = Object.keys(tableData[0]);
     tableHead.html("");
-    headers.html("");
+    let headers = Object.keys(tableData[0]);
     headers.forEach(header => {
         tableHead.append(
         '<th>' + header + '</th>'
@@ -55,7 +54,6 @@ function buildTableBody(tableBodyID, tableData) {
  */
 function injectTableActions(table, idPrefix, actions) {
     let bodyTable = $(table);
-    bodyTable.html("");
     let actionButtons = [
       {
         id: idPrefix + '-delete-btn',

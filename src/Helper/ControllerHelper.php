@@ -48,7 +48,7 @@ trait ControllerHelper {
         $requestData = [];
         foreach($requestKeys as $requestKey)
         {
-            if(!isset($_POST[$requestKey]))
+            if(isset($_POST[$requestKey]))
             {
                 $requestData[$requestKey] = $_POST[$requestKey];
             }

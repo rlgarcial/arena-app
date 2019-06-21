@@ -25,6 +25,7 @@ function getAllArenas() {
         'REQUEST_URL': '/arena/list'
     },
     success: function(response) {
+      
       let jsonResponse = JSON.parse(response);
       let listaArenasResponse = JSON.parse(jsonResponse);
       buildTableHead('#arena-table-head', listaArenasResponse.data);
